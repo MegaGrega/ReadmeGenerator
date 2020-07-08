@@ -35,33 +35,83 @@ const questions = [
         type: "input",
         message: "Tests: ",
         name: "tests"
+    },
+    {
+        type: "list",
+        message: "Choose a License: ",
+        choices: ["MIT", "Apache"],
+        name: "license"
     }
 
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
+// ReadMe Layout
+const readMeText =`
+# TITLE GOES HERE
+
+## Description
+        
+## Table of Contents
+        
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
+        
+## Installation
+        
+REPLACE THIS TEXT
+        
+## Usage 
+        
+REPLACE THIS TEXT
+        
+## Credits
+        
+REPLACE THIS TEXT
+        
+## License
+        
+REPLACE THIS TEXT
+        
+## Contributors
+        
+REPLACE THIS TEXT
+        
+## Tests
+        
+REPLACE THIS TEXT
+        
+## Questions
+        
+REPLACE THIS TEXT`
+
+// Badge Choice 
+function badge(info){
+    //License Choice informs Badge Choice
+    if(info.license === "MIT"){
+        return "![MIT](https://img.shields.io/badge/license-MIT-green)"
+    }
+    if(info.license === "Apache"){
+        return "https://img.shields.io/badge/license-Apache-blue"
+    } 
 }
 
-// function to initialize program
-function init() {
-    getReadMeInfo()
-}
-
-//Asynchronus Function to Ask Questions
-async function getReadMeInfo() {
+//Asynchronus Function to Ask Question and Write File
+async function initReadMeGen() {
     //Prompts user with Question Array
-    const info = await inquirer.prompt(questions)      
-    //Writes the README.MD file                 
-    await writeFileAsync("README.md",
-        `Project Title: ${info.title}
-        ${info.description}
-        ${info.install}
-        ${info.usage}
-        ${info.contributions}
-        ${info.tests}`
-    )
+    const info = await inquirer.prompt(questions)
+    // License Badge Choice
+    const license = badge(info);
+    //Writes the README.MD file
+    await writeFileAsync("README.md",readMeText)           
 }
 
-// function call to initialize program
-init();
+// Initialize ReadMe Generator
+initReadMeGen()
+
+
+
