@@ -150,9 +150,13 @@ async function initReadMeGen() {
     const readMeText =`
 # ${info.title}
 
+[![Sourcegraph](https://sourcegraph.com/github.com/${info.github}/${info.title}/-/badge.svg)](https://sourcegraph.com/github.com/${info.github}/${info.title}?badge)
+
 ${badgeImg}
 
 ## Description
+
+
 
 ${info.description}
 
@@ -211,7 +215,9 @@ ${info.tests}
         
 If you have any questions you can reach me at ${info.email}
 
-My github profile is at github.com/${info.github}`
+My github profile is at github.com/${info.github}
+
+`
     //Writes the README.MD file
     await writeFileAsync("README.md",readMeText)           
 }

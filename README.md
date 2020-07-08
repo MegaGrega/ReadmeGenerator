@@ -1,11 +1,15 @@
 
-# blah
+# ReadmeGenerator
+
+[![Sourcegraph](https://sourcegraph.com/github.com/megagrega/ReadmeGenerator/-/badge.svg)](https://sourcegraph.com/github.com/megagrega/ReadmeGenerator?badge)
 
 ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 
-blah
+
+
+Blah
 
 ---
         
@@ -23,19 +27,19 @@ blah
         
 ## Installation
         
-blah
+npm install inquirer
 
 ---
         
 ## Usage 
         
-blah
+None
 
 ---
         
 ## Credits
         
-blah
+Me
 
 ---
         
@@ -52,13 +56,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contributing
 
         
-blah
+None
 
 ---
         
 ## Tests
         
-blah
+None
 
 ---
         
@@ -67,3 +71,4 @@ blah
 If you have any questions you can reach me at mkmgrega@gmail.com
 
 My github profile is at github.com/megagrega
+
