@@ -9,7 +9,7 @@
 
 
 
-Blah
+This is a comman lThis is a command line application to generate a markdown file based of a series of prompts.
 
 ---
         
@@ -27,7 +27,7 @@ Blah
         
 ## Installation
         
-npm install inquirer
+Copy the code from github and run npm install in your terminal. This should install the dependency "inquirer".
 
 ---
         
@@ -39,7 +39,7 @@ None
         
 ## Credits
         
-Me
+N/A
 
 ---
         
@@ -56,13 +56,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contributing
 
         
-None
+No contribution guidelines.
 
 ---
         
 ## Tests
         
-None
+No tests available at this time.
 
 ---
         
