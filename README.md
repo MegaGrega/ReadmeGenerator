@@ -9,7 +9,7 @@
 
 
 
-This is a comman lThis is a command line application to generate a markdown file based of a series of prompts.
+This is a command line application to generate a markdown file based of a series of prompts.
 
 ---
         
@@ -56,13 +56,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contributing
 
         
-No contribution guidelines.
+No contribution guidelines as of now.
 
 ---
         
 ## Tests
         
-No tests available at this time.
+None available.
 
 ---
         
